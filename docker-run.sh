@@ -4,7 +4,7 @@ docker run -d \
   -v $PWD/acme.json:/acme.json \
   -p 80:80 \
   -p 443:443 \
-  -l traefik.frontend.rule=Host:monitor.bieccamvd.com \
+  -l traefik.frontend.rule=Host:traefik.bieccamvd.com \
   -l traefik.port=8090 \
   --network bridge \
   --name traefik \
